@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-use App\Http\Controllers\PostController;//
+use App\Http\Controllers\PostController;
 
 Route::get('/posts',[PostController::class,'index']);
+
+Route::get('/posts/{post}', [PostController::class, 'show']);
+//'/post/{対象のデータID}’にGetリクエストが来たら、PostControllerのshowメゾットを実行する
