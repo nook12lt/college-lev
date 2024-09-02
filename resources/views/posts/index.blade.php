@@ -13,8 +13,8 @@
                 <div class='posts'>
                 <h2 class='title'>
                     <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
-                    <p class='body'>{{ $post->body }}</p>
                 </h2>
+                <p class='body'>{{ $post->body }}</p>
                 </div>
             @endforeach
         </div>
