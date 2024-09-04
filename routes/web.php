@@ -15,3 +15,10 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/',[PostController::class, 'index']);
+//雛形は以下です
+//Route::リクエスト方式('URI', [コントローラー名::class, 'メゾット'])
+
+Route::get('/posts/create', [PostController::class, 'create']);
+Route::get('/posts/{post}', [PostController::class, 'show']);
+
+Route::post('/posts', [PostController::class, 'store']);
