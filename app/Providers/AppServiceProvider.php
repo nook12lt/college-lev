@@ -12,6 +12,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Paginator::useBootstrap();
+        Paginator::useBootstrap();  //動画
+
+        //Paginator::useBootstrapFive();    公式ドキュメント
+        //またはPaginator::useBootstrapFour();     公式ドキュメント
     }
 }
